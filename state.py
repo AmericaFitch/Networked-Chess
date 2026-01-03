@@ -1,4 +1,14 @@
 class Board:
-    def __init__(self, ):
-        chess_Board = [[ 0 for column in range(8)] for row in range(8)]
+    Empty = NONE
+    def __init__(self):
+        self.reset()
 
+    def reset(self):
+        self.squares = [self.EMPTY] * 64
+        self.turn = "w"
+        self.move_history = []
+        self.setup_start_position()
+
+    def _setup_start_psotion(self):
+
+    
