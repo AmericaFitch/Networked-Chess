@@ -12,7 +12,7 @@ class Board:
           Empty: .
     """
 
-    EMPTY = " "
+    EMPTY = "."
 
     def __init__(self):
         self.reset()
