@@ -27,6 +27,21 @@ class Board:
         # For now, just clear the board. We'll place pieces next.
         self.squares = [self.EMPTY] * 64
 
+        #Black Pieces
+        black_back = "rnbqkbnr"
+        for col, piece in enumerate(black_back):
+            self.set(0, col, piece)
+        for col in range(8):
+            self.set(1, col, "p")
+        
+
+        #White Pieces
+        white_back = "rnbqkbnr"
+        for col, piece in enumerate(white_back):
+            self.set(0, col, piece)
+        for col in range(8):
+            self.set(1, col, "p")
+
     def __str__(self) -> str:
         lines = []
         for row in range(8):
